@@ -28,37 +28,37 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="ri-home-5-line"></i>Home
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="#skills" class="nav__link active-link">
                                 <i class="ri-trophy-line"></i>Skills
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
+                            <a href="#qualification" class="nav__link active-link">
                                 <i class="ri-book-open-line"></i>Qualifications
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">
+                            <a href="#services" class="nav__link active-link">
                                 <i class="ri-briefcase-line"></i>Services
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#projects" class="nav__link">
+                            <a href="#projects" class="nav__link active-link">
                                 <i class="ri-image-line"></i>Projects
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                            <a href="#contact" class="nav__link active-link">
                                 <i class="ri-chat-3-line"></i>Contact
                             </a>
                         </li>
@@ -70,7 +70,8 @@
                 </div>
                 <div class="nav__buttons">
                     <!--Theme Change Button-->
-                    <!--<i class="ri-moon-line change-theme" id="theme-button"></i>-->
+
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
                     <!-- Toggle Button -->
                     <div class="nav__toggle" id="nav-toggle">
@@ -600,13 +601,15 @@
 
                             <div class="contact__form-div">
                                 <label class="contact__form-tag">Email</label>
-                                <input type="text" name="user_name" required placeholder="Enter your email."class="contact__form-input" id="contact-name">
+                                <input type="text" name="user_email" required placeholder="Enter your email."class="contact__form-input" id="contact-email">
                             </div>
 
                             <div class="contact__form-div contact__form-area">
                                 <label class="contact__form-tag">Project</label>
                                 <textarea name="user_project" placeholder="Tell me about your project!" id="contact-project" class="contact__form-input"></textarea>
                             </div>
+
+                            <p class="contact__message" id="contact-message"></p>
 
                             <button type="submit" class="contact__button">
                                 Submit <i class="ri-arrow-right-up-line"></i>
@@ -619,12 +622,49 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            
+            <div class="footer__container container">
+                <h1 class="footer__title">Joshua</h1>
+                <p>Full Stack Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link ">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/joshua-leyva-0b9942b6/" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/jnleyva816" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="#" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright FlatnoseGang. All Rights Reserved
+                </span>
+            </div>
         </footer>
 
 
         <!--========== SCROLL UP ==========-->
-        
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src=""></script>
@@ -633,7 +673,7 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
